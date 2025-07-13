@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahrir Hotel</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-lg fixed-top">
+        <div class="container-fluid px-5 mx-md-5">
+            <a class="navbar-brand h-100" href="#header">
+                <img src="image/logo.png" class="w-100 h-100" alt="tahrir hotel logo">
+            </a>
+            <button class="navbar-toggler custom-toggler border-0 bg-transparent shadow-none mt-3" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mobile-logo d-md-none">
+                    <img src="image/logo.png" alt="Tahrir Hotel Logo">
+                </div>
+                <ul class="navbar-nav gap-2 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium" href="#aboutus">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium" href="#interior">Interior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium" href="#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium" href="#testimonials">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium" href="#location">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-2 fw-medium" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- header -->
+    <header id="header" class="d-flex align-items-end justify-content-start w-100 overflow-hidden position-relative">
+        <video autoplay muted loop class="position-absolute w-100 h-100 object-fit-cover" style="z-index: -2;" id="headerVideo">
+            <source src="image/vid2.mp4" type="video/mp4">
+        </video>
+        <div class="position-absolute w-100 h-100" style="background: rgba(0, 0, 0, 0.5); z-index: -1;"></div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        
+        <div class="container-fluid position-relative" style="z-index: 1;">
+            <div class="header-content">
+                <div class="header-text">
+                    <div class="badge-container mb-3">
+                        <span class="badge">Graduation Project 2025</span>
+                    </div>
+                    <h1 class="display-4 fw-bold header-title">Al Tahrir Hotel</h1>
+                    <p class="lead fw-light header-subtitle">Experience luxury and comfort in the heart of the city - Al Tahrir.</p>
+                    <div class="header-actions">
+                        <a href="#aboutus" class="btn btn-lg cta-btn">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Us Section -->
+    <section id="aboutus" class="text-center d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col rounded-4 p-5 m-auto">
+                    <div class="logo w-100 d-flex justify-content-center align-items-center">
+                        <img src="image/logo.png" class="w-25 h-100 p-0" alt="">
+                    </div>
+                    <p class="fs-4 fw-bold">Al Tahrir Hotel</p>
+                    <p class="lead mb-0">Faculty of Fine Arts Graduation Project</p>
+                    <p class="lead">2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="aboutus" class="d-flex align-items-center justify-content-center" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-11 mt-3 text-center">
+                    <div class="w-25 m-auto">
+                        <img src="image/logo.png" class="img-fluid w-75" alt="Tahrir Hotel Logo">
+                    </div>
+                    <h1 class="display-5 fw-bold mb-3"> Al Tahrir Hotel</h1>
+                    <div class="row g-4 mb-3">
+                        <div class="col-md-6">
+                            <div class="p-4 rounded-3 border border-white border-opacity-25">
+                                <i class="fas fa-graduation-cap fs-2 mb-3 d-block"> </i>
+                                <h5 class="fw-bold mb-2">Graduation Project</h5>
+                                <p class="mb-0 text-white-50">Faculty of Fine Arts</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 rounded-3 border border-white border-opacity-25">
+                                <i class="fas fa-calendar-alt fs-2 mb-3 d-block"></i>
+                                <h5 class="fw-bold mb-2">Class of 2025</h5>
+                                <p class="mb-0 text-white-50">Academic Year</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="lead mb-4 text-white-75">
+                        Experience luxury and comfort in the heart of the city. Our graduation project showcases innovative design concepts and modern hospitality solutions.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3 col-6">
+                            <div class="d-flex align-items-center justify-content-center p-3 rounded-3">
+                                <i class="fas fa-star me-2"></i>
+                                <span class="fw-medium">Luxury Design</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="d-flex align-items-center justify-content-center p-3 rounded-3">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                <span class="fw-medium">Prime Location</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="d-flex align-items-center justify-content-center p-3 rounded-3">
+                                <i class="fas fa-star me-2"></i>
+                                <span class="fw-medium">5 Stars Hotel</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="d-flex align-items-center justify-content-center p-3 rounded-3">
+                                <i class="fas fa-hotel me-2"></i>
+                                <span class="fw-medium">Comfort</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#interior" class="btn btn-lg px-4 py-2  text-white border-0 rounded-pill fs-5" style="background-color: #616149;">
+                        Explore Design
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Interior -->
+    <section id="interior" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-11 col-md-12 m-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="display-4 fw-bold text-white mt-5 mb-3">Hotel Interior</h2>
+                        <p class="lead text-white-50">Experience luxury in every corner of Al Tahrir Hotel</p>
+                    </div>
+                    
+                    <div class="row g-4">
+                        <!-- Reception -->
+                        <div class="col-12 col-lg-6">
+                            <div class="interior-category-card" data-gallery="reception">
+                                <div class="interior-category-image">
+                                    <img src="image/reception 1.jpg" alt="Reception" class="img-fluid">
+                                    <div class="interior-category-overlay">
+                                        <div class="interior-category-content">
+                                            <div class="interior-category-icon">
+                                                <i class="fas fa-door-open"></i>
+                                            </div>
+                                            <h3 class="interior-category-title">Reception</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Suites -->
+                        <div class="col-12 col-lg-6">
+                            <div class="interior-category-card" data-gallery="suites">
+                                <div class="interior-category-image">
+                                    <img src="image/bedroom 1.png" alt="Deluxe Suites" class="img-fluid">
+                                    <div class="interior-category-overlay">
+                                        <div class="interior-category-content">
+                                            <div class="interior-category-icon">
+                                                <i class="fas fa-bed"></i>
+                                            </div>
+                                            <h3 class="interior-category-title">Deluxe Suites</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Lobby -->
+                        <div class="col-12 col-lg-6">
+                            <div class="interior-category-card" data-gallery="lobby">
+                                <div class="interior-category-image">
+                                    <img src="image/lobby 1.png" alt="Lobby" class="img-fluid">
+                                    <div class="interior-category-overlay">
+                                        <div class="interior-category-content">
+                                            <div class="interior-category-icon">
+                                                <i class="fas fa-couch"></i>
+                                            </div>
+                                            <h3 class="interior-category-title">Lobby</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pool -->
+                        <div class="col-12 col-lg-6">
+                            <div class="interior-category-card" data-gallery="pool">
+                                <div class="interior-category-image">
+                                    <img src="image/pool 1.png" alt="Pool" class="img-fluid">
+                                    <div class="interior-category-overlay">
+                                        <div class="interior-category-content">
+                                            <div class="interior-category-icon">
+                                                <i class="fas fa-swimming-pool"></i>
+                                            </div>
+                                            <h3 class="interior-category-title">Pool</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Restaurant -->
+                        <div class="col-12 col-lg-6 m-auto mt-4 ">
+                            <div class="interior-category-card" data-gallery="restaurant">
+                                <div class="interior-category-image">
+                                    <img src="image/restaurant 1.jpg" alt="Restaurant" class="img-fluid">
+                                    <div class="interior-category-overlay">
+                                        <div class="interior-category-content">
+                                            <div class="interior-category-icon">
+                                                <i class="fas fa-utensils"></i>
+                                            </div>
+                                            <h3 class="interior-category-title">Restaurant</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hidden image -->
+        <div style="display: none;">
+            <!-- Reception Gallery Images -->
+            <div class="interior-image-container" data-gallery="reception" data-index="0">
+                <img src="image/reception 1.jpg" alt="Reception" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="reception" data-index="1">
+                <img src="image/reception 2.jpg" alt="Reception" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="reception" data-index="2">
+                <img src="image/reception 3.jpg" alt="Reception" class="img-fluid">
+            </div>
+            
+            <!-- Suites Gallery Images -->
+            <div class="interior-image-container" data-gallery="suites" data-index="0">
+                <img src="image/bedroom 1.png" alt="Deluxe Suites" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="suites" data-index="1">
+                <img src="image/bedroom 2.png" alt="Deluxe Suites" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="suites" data-index="2">
+                <img src="image/bedroom 3.png" alt="Deluxe Suites" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="suites" data-index="3">
+                <img src="image/bedroom 4.jpg" alt="Deluxe Suites" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="suites" data-index="4">
+                <img src="image/bedroom 5.png" alt="Deluxe Suites" class="img-fluid">
+            </div>
+            
+            <!-- Lobby Gallery Images -->
+            <div class="interior-image-container" data-gallery="lobby" data-index="0">
+                <img src="image/lobby 1.png" alt="Lobby" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="lobby" data-index="1">
+                <img src="image/lobby 2.png" alt="Lobby" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="lobby" data-index="2">
+                <img src="image/lobby 3.png" alt="Lobby" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="lobby" data-index="3">
+                <img src="image/lobby 4.png" alt="Lobby" class="img-fluid">
+            </div>
+            
+            <!-- Pool Gallery Images -->
+            <div class="interior-image-container" data-gallery="pool" data-index="0">
+                <img src="image/pool 1.png" alt="Pool" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="pool" data-index="1">
+                <img src="image/pool 2.png" alt="Pool" class="img-fluid">
+            </div>
+            
+            <!-- Restaurant Gallery Images -->
+            <div class="interior-image-container" data-gallery="restaurant" data-index="0">
+                <img src="image/restaurant 1.jpg" alt="Restaurant" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="restaurant" data-index="1">
+                <img src="image/restaurant 2.png" alt="Restaurant" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="restaurant" data-index="2">
+                <img src="image/restaurant 3.png" alt="Restaurant" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="restaurant" data-index="3">
+                <img src="image/restaurant 4.png" alt="Restaurant" class="img-fluid">
+            </div>
+            <div class="interior-image-container" data-gallery="restaurant" data-index="4">
+                <img src="image/restaurant sec5.png" alt="Restaurant" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- Image Gallery Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Hotel Interior</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="gallery-carousel">
+                        <div class="gallery-container">
+                            <div class="gallery-track">
+                            </div>
+                        </div>
+                        <button class="gallery-nav gallery-prev" type="button">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery-nav gallery-next" type="button">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="gallery-counter">
+                            <span class="current-image">1</span> / <span class="total-images">4</span>
+                        </div>
+                        <div class="gallery-dots-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="section-spacing section-enhanced">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="display-6 fw-bold text-white">We Offer...</h2>
+                <p class="lead text-white-50">Everything you need for a perfect stay</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-5 col-md-3">
+                    <div class="p-4 rounded-4 h-100 d-flex flex-column align-items-center enhanced-card">
+                        <i class="fas fa-wifi fa-2x mb-3 icon-enhanced"></i>
+                        <h6 class="fw-bold mb-1 text-white">Free Wi-Fi</h6>
+                        <span class="small text-white-50">High-speed internet in all rooms</span>
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="p-4 rounded-4 h-100 d-flex flex-column align-items-center enhanced-card">
+                        <i class="fas fa-swimming-pool fa-2x mb-3 icon-enhanced"></i>
+                        <h6 class="fw-bold mb-1 text-white">Swimming Pool</h6>
+                        <span class="small text-white-50">Indoor & outdoor pools</span>
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="p-4 rounded-4 h-100 d-flex flex-column align-items-center enhanced-card">
+                        <i class="fas fa-dumbbell fa-2x mb-3 icon-enhanced"></i>
+                        <h6 class="fw-bold mb-1 text-white">Fitness Center</h6>
+                        <span class="small text-white-50">Modern gym facilities</span>
+                    </div>
+                </div>
+                <div class="col-5 col-md-3">
+                    <div class="p-4 rounded-4 h-100 d-flex flex-column align-items-center enhanced-card">
+                        <i class="fas fa-concierge-bell fa-2x mb-3 icon-enhanced"></i>
+                        <h6 class="fw-bold mb-1 text-white">24/7 Service</h6>
+                        <span class="small text-white-50">Always here for you</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-spacing section-enhanced">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="display-6 fw-bold text-white">What Our Guests Say</h2>
+                <p class="lead text-white-50">Real experiences from real guests</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-10">
+                    <div class="p-4 rounded-4 h-100 enhanced-card">
+                        <p class="mb-3 text-white">"A truly luxurious experience in the heart of Cairo. The staff were wonderful and the design is stunning!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                            <div>
+                                <div class="fw-bold text-white">Omar S.</div>
+                                <div class="text-white-50 small">Egypt</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-10">
+                    <div class="p-4 rounded-4 h-100 enhanced-card">
+                        <p class="mb-3 text-white">"The amenities and service exceeded my expectations. I'll definitely return!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                            <div>
+                                <div class="fw-bold text-white">Sarah M.</div>
+                                <div class="text-white-50 small">UK</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-10">
+                    <div class="p-4 rounded-4 h-100 enhanced-card">
+                        <p class="mb-3 text-white">"Perfect location, beautiful rooms, and delicious food. Highly recommended!"</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Guest" class="rounded-circle me-3" width="48" height="48">
+                            <div>
+                                <div class="fw-bold text-white">Ahmed F.</div>
+                                <div class="text-white-50 small">UAE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="section-spacing section-enhanced">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="display-6 fw-bold text-white">Find Us</h2>
+                <p class="lead text-white-50">Located in the heart of Tahrir Square, Cairo</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-8">
+                    <div class="ratio ratio-16x9 rounded-4 overflow-hidden enhanced-card p-0">
+                        <iframe src="https://www.google.com/maps?q=Tahrir+Square,+Cairo,+Egypt&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border-0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section id="contact" class="section-spacing">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="display-6 fw-bold text-white mb-2">Get In Touch</h2>
+                <p class="lead text-white-50">Let's connect and discuss your project</p>
+            </div>
+            <div class="contact-container container">
+                <div class="row">
+                    <div class="contact-grid col-11 col-md-12 m-auto">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6 class="contact-label">Phone</h6>
+                                <p class="contact-value">+20 10 6647 6519</p>
+                                <span class="contact-subtitle">24/7 Support</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6 class="contact-label">Email</h6>
+                                <p class="contact-value">nesma.magdi10@gmail.com</p>
+                                <span class="contact-subtitle">Faculty of Fine Arts Graduate</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content">
+                                <h6 class="contact-label">Location</h6>
+                                <p class="contact-value">Tahrir Square, Cairo</p>
+                                <span class="contact-subtitle">Egypt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white-50 text-center">
+        <div class="container">
+            <small>&copy; 2025 Al Tahrir Hotel. Graduation Project by Faculty of Fine Arts.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html> 
