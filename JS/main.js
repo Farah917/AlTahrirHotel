@@ -285,12 +285,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new GalleryModal();
     initSmoothScrolling();
     
-    // Set video playback speed
-    const headerVideo = document.getElementById('headerVideo');
-    if (headerVideo) {
-        headerVideo.playbackRate = 1.5;
-    }
-    
     // Scroll to top functionality
     const scrollToTopBtn = document.getElementById('scrollToTop');
     
