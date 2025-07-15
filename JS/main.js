@@ -147,6 +147,7 @@ class GalleryModal {
         this.currentIndex = 0;
         this.images = [];
         this.currentGallery = '';
+        this._historyPushed = false; // Track if we pushed state
         this.init();
     }
     init() {
@@ -178,6 +179,11 @@ class GalleryModal {
         const modal = new bootstrap.Modal(this.modal);
         modal.show();
         this.goToImage(0);
+        // --- Push history state for modal ---
+        if (!this._historyPushed) {
+            history.pushState({ modalOpen: true }, '');
+            this._historyPushed = true;
+        }
     }
     buildGallery() {
         this.track.innerHTML = '';
@@ -238,7 +244,19 @@ class GalleryModal {
         this.track.addEventListener('touchmove', (e) => { if (!isDragging) return; currentX = e.touches[0].clientX; if (Math.abs(startX - currentX) > 10) e.preventDefault(); });
         this.track.addEventListener('touchend', (e) => { if (!isDragging) return; const diff = startX - currentX; const threshold = 50; if (Math.abs(diff) > threshold) { if (diff > 0) this.nextImage(); else this.prevImage(); } isDragging = false; });
     }
-    resetGallery() { this.currentIndex = 0; this.images = []; this.track.style.transform = 'translateX(0)'; }
+    resetGallery() {
+        this.currentIndex = 0;
+        this.images = [];
+        this.track.style.transform = 'translateX(0)';
+        // --- Go back in history if modal state was pushed ---
+        if (this._historyPushed) {
+            this._historyPushed = false;
+            // Only go back if the current history state is modalOpen
+            if (history.state && history.state.modalOpen) {
+                history.back();
+            }
+        }
+    }
     renderDots() {
         if (!this.dotsContainer) return;
         this.dotsContainer.innerHTML = '';
@@ -282,7 +300,7 @@ function initSmoothScrolling() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    new GalleryModal();
+    const galleryModalInstance = new GalleryModal();
     initSmoothScrolling();
     
     // Scroll to top functionality
@@ -301,5 +319,16 @@ document.addEventListener('DOMContentLoaded', () => {
             top: 0,
             behavior: 'smooth'
         });
+    });
+    // --- Listen for popstate to close modal on back button ---
+    window.addEventListener('popstate', function (event) {
+        const modal = document.getElementById('imageModal');
+        if (modal && modal.classList.contains('show')) {
+            // Close the modal if open
+            const modalInstance = bootstrap.Modal.getInstance(modal);
+            if (modalInstance) {
+                modalInstance.hide();
+            }
+        }
     });
 });
